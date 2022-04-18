@@ -11,77 +11,77 @@ export class TaskListComponent implements OnInit {
   tasks: Array<Task> = [
     {
       id: 1,
-      description: 'Criar um projeto básico',
+      description: 'Create a base project',
       completed: false
     },
     {
       id: 2,
-      description: 'Colocar o lixo para fora até as 19h',
+      description: 'Read articles new articles',
       completed: true
     },
     {
       id: 3,
-      description: 'Fazer o jantar até as 22h',
+      description: 'Meeting with new customers',
       completed: true
     },
     {
       id: 4,
-      description: 'Reunião de alinhamento dia 18/07 as 14h',
+      description: 'Alignment meeting on the 07-18th at 14 pm',
       completed: true
     },
     {
       id: 5,
-      description: 'Reunião de alinhamento projeto bradesco 18/07 as 16h',
+      description: 'Request new team member',
       completed: false
     },
     {
       id: 6,
-      description: 'Criar conteúdo da aula',
+      description: 'Read articles new articles',
       completed: false
     },
     {
       id: 7,
-      description: 'Reunião Marketing',
+      description: 'Marketing meeting',
       completed: false
     },
     {
       id: 8,
-      description: 'Ler emails do fornecedor',
+      description: 'Read emails from international customers',
       completed: false
     },
     {
       id: 9,
-      description: 'Criar conteúdo da aula',
+      description: 'Change base project components',
       completed: false
     },
     {
       id: 10,
-      description: 'Criar conteúdo da aula',
+      description: 'Innovation meeting',
       completed: false
     },
     {
       id: 11,
-      description: 'Criar conteúdo da aula',
+      description: 'Read emails from national customers',
       completed: false
     },
     {
       id: 12,
-      description: 'Criar conteúdo da aula',
+      description: 'Call the sustainability customer',
       completed: false
     },
     {
       id: 13,
-      description: 'Criar conteúdo da aula',
+      description: 'Moving forward with the ESG project',
       completed: false
     },
     {
       id: 14,
-      description: 'Criar conteúdo da aula',
+      description: 'Make daily report',
       completed: false
     },
     {
       id: 15,
-      description: 'Criar conteúdo da aula',
+      description: 'Monthly report',
       completed: false
     },
   ];

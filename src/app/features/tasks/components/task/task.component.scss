@@ -6,11 +6,14 @@
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     margin-bottom: 35px;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
     color: white;
+}
+.task-card:hover {
+  background: linear-gradient(180deg, #0f0f0f9c, #7d7d85e7 );
 }
 .completed {
   position:absolute;
@@ -18,7 +21,12 @@
   margin-bottom: 10px;
   font-size: 15px;
 }
-
+.button-status{
+  background-color:rgb(99, 89, 89);
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
 .task-id {
   margin-bottom: 5px;
 }

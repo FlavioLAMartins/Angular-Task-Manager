@@ -15,4 +15,10 @@ export class TaskComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  updateCompleted() {
+    if (this.task) {
+      this.task.completed = !this.task?.completed
+    }
+  }
+
 }
