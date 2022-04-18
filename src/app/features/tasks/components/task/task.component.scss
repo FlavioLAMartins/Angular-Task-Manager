@@ -1,11 +1,13 @@
+@import 'src/assets/styles/_colors.scss';
 .task-card {
     font-size: 13px;
     width: 250px;
     height: 130px;
-    background: linear-gradient(180deg, #7d7d85e7, #0f0f0f6b);
+    background: linear-gradient(180deg, $secondary-default-color, $primary-default-color);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+    margin-left: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
     color: white;
 }
 .task-card:hover {
-  background: linear-gradient(180deg, #0f0f0f9c, #7d7d85e7 );
+  background: linear-gradient(180deg, $primary-default-color, $secondary-default-color );
 }
 .completed {
   position:absolute;

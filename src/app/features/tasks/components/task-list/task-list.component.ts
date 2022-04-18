@@ -86,9 +86,19 @@ export class TaskListComponent implements OnInit {
     },
   ];
 
+  filteredTasks = this.tasks;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  searchTasks(event: any) {
+    const searchValue = event.target.value;
+    if (searchValue.length > 0) {
+      return this.filteredTasks = this.tasks.filter((task) => task.description.toUpperCase().search(searchValue.toUpperCase()) > -1);
+    }
+    return this.filteredTasks = this.tasks
+
   }
 
 }

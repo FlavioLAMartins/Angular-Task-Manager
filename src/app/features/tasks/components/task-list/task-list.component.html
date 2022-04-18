@@ -1,3 +1,8 @@
+<div class="box-search">
+  <h2>Search Task</h2>
+  <input type="text" (keyup)="searchTasks($event)" placeholder="
+  search here for your task">
+</div>
 <div class="container">
-  <app-task *ngFor="let item of tasks" [task]="item"></app-task>
+  <app-task *ngFor="let item of filteredTasks" [task]="item"></app-task>
 </div>
