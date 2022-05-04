@@ -86,7 +86,7 @@ export class TaskListComponent implements OnInit {
     },
   ];
 
-  filteredTasks = this.tasks;
+  filteredTasks: Array<Task> = this.tasks;
   constructor() { }
 
   ngOnInit(): void {
@@ -98,7 +98,6 @@ export class TaskListComponent implements OnInit {
       return this.filteredTasks = this.tasks.filter((task) => task.description.toUpperCase().search(searchValue.toUpperCase()) > -1);
     }
     return this.filteredTasks = this.tasks
-
   }
-
 }
+
