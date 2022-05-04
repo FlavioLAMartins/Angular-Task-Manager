@@ -3,6 +3,11 @@
   <input type="text" (keyup)="searchTasks($event)" placeholder="
   search here for your task">
 </div>
+
 <div class="container">
   <app-task *ngFor="let item of filteredTasks" [task]="item"></app-task>
+</div>
+
+<div class="task-message">
+    <h3>Task not found!</h3>
 </div>

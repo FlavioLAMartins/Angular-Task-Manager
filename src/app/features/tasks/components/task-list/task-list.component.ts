@@ -8,6 +8,10 @@ import { Task } from '../models/task.model';
 })
 export class TaskListComponent implements OnInit {
 
+
+  showMensageError: boolean = false;
+
+
   tasks: Array<Task> = [
     {
       id: 1,
@@ -93,9 +97,13 @@ export class TaskListComponent implements OnInit {
   }
 
   searchTasks(event: any) {
+    this.showMensageError = false;
     const searchValue = event.target.value;
     if (searchValue.length > 0) {
-      return this.filteredTasks = this.tasks.filter((task) => task.description.toUpperCase().search(searchValue.toUpperCase()) > -1);
+      this.filteredTasks = this.tasks.filter((task) => task.description.toUpperCase().search(searchValue.toUpperCase()) > -1)
+      if (this.filteredTasks.length === 0) this.showMensageError = true;
+      else this.showMensageError = false;
+      return this.filteredTasks;
     }
     return this.filteredTasks = this.tasks
   }
