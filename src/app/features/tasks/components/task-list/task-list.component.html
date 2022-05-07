@@ -8,6 +8,6 @@
   <app-task *ngFor="let item of filteredTasks" [task]="item"></app-task>
 </div>
 
-<div class="task-message">
+<div class="task-message" *ngIf="showMessageError">
     <h3>Task not found!</h3>
 </div>

@@ -1,4 +1,4 @@
-<div class="task-card">
+<div class="task-card" [ngClass]="{'completed-false': !task?.completed}">
   <h3 class="task-id">Taks: {{task?.id}}</h3>
   <h3>Description: {{task?.description}}</h3>
   <p class="completed">Completed: <span class="button-status" (click)="updateCompleted()" >{{task?.completed}}</span></p>
